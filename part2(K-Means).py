@@ -6,7 +6,7 @@ from tkinter import ttk
 import matplotlib.pyplot as plt
 
 # Reads the data from CSV file
-data = pd.read_csv("midtermProject-part2-data.csv")
+data = pd.read_csv("part2-data.csv")
 
 # Set the number of clusters (k) and maximum iterations
 k = 3
