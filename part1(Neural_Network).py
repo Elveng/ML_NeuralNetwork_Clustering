@@ -9,8 +9,8 @@ from torch.utils.data import DataLoader, TensorDataset
 import numpy as np
 
 # Loads the data
-train_data = pd.read_csv('midtermProject-part1-TRAIN.csv')
-test_data = pd.read_csv('midtermProject-part1-TEST.csv')
+train_data = pd.read_csv('part1-TRAIN.csv')
+test_data = pd.read_csv('part1-TEST.csv')
 
 # Extracts features and target
 X_train = train_data.drop(columns=['ANGLE-ACC-ARM'])
