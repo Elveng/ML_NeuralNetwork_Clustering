@@ -1,0 +1,69 @@
+Tahsin Berk Oztekin - 21070001035
+Used Libraries:
+pandas: Data manipulation and organization.
+scikit-learn: Data splitting, scaling, and metrics.
+numpy: Numerical operations and array handling.
+torch: Neural network creation.
+torch.nn: Neural network layers.
+torch.optim: Optimizers for training.
+torch.utils.data: Data handling for PyTorch.
+
+Train results:
+MAE: 0.1500
+MSE: 0.0358
+RMSE: 0.1893
+R2: -0.2319
+
+Test results:
+MAE: 0.1214
+MSE: 0.0241
+RMSE: 0.1551
+R2: 0.2034
+
+Model details:
+Number of hidden layers: 2
+Number of nodes in each hidden layer: 4, 3
+Activation function in each layer: ReLU
+Learning rate: 0.01
+Momentum value: 0.9
+Gradient method: SGD
+Batch size: 64
+Number of epochs: 100
+
+Final values of the weights and biases:
+fc1.weight
+Parameter containing:
+tensor([[-0.1034, -0.1649, -0.0118, -0.1526, -0.0487,  0.0266, -0.0461, -0.1190,
+         -0.0500,  0.1796, -0.1472, -0.0624,  0.1736, -0.0273,  0.0580,  0.0487,
+          0.0227, -0.0770, -0.0102, -0.0502, -0.1713,  0.0943, -0.1232, -0.0382,
+          0.1686, -0.0245,  0.0654,  0.1842, -0.0076,  0.0250,  0.1475, -0.1162],
+        [-0.1156,  0.1570, -0.0786, -0.0238,  0.1858, -0.0437, -0.0593, -0.1060,
+          0.0192,  0.0675,  0.0493,  0.0947,  0.1245,  0.1843, -0.1301, -0.3880,
+          0.0950,  0.0027,  0.0098,  0.1616, -0.0504,  0.0998, -0.1335,  0.0205,
+         -0.0109, -0.0845,  0.1574, -0.0058,  0.0785, -0.0475,  0.0812,  0.0895],
+        [ 0.1881, -0.0809,  0.0753,  0.1856, -0.1969,  0.0428, -0.0109,  0.0355,
+          0.0346, -0.0865,  0.0159,  0.1399,  0.0266,  0.0159, -0.0924, -0.2238,
+          0.0202,  0.1134,  0.0743, -0.0584,  0.1478, -0.0026, -0.0040, -0.0387,
+          0.1208,  0.1784, -0.0386, -0.0412, -0.1113,  0.1815,  0.1788, -0.1588],
+        [-0.0366,  0.0482, -0.0333,  0.0420,  0.0385,  0.0532, -0.0365, -0.0356,
+         -0.0131, -0.0012,  0.0554,  0.0939,  0.0661,  0.1417, -0.0754,  0.6902,
+          0.0416,  0.0521,  0.0467,  0.0536,  0.0218,  0.0251, -0.0554, -0.0147,
+          0.0487,  0.0491,  0.1267,  0.0199,  0.0226,  0.0495,  0.1079, -0.0297]],
+       requires_grad=True)
+fc1.bias
+Parameter containing:
+tensor([ 0.0579, -0.0019, -0.0452, -0.2025], requires_grad=True)
+fc2.weight
+Parameter containing:
+tensor([[ 0.1443,  0.2836,  0.1781, -0.4808],
+        [ 0.2104,  0.2899, -0.3525, -0.4887],
+        [ 0.0473,  0.2403,  0.1285,  0.1831]], requires_grad=True)
+fc2.bias
+Parameter containing:
+tensor([ 0.4116, -0.2039, -0.4961], requires_grad=True)
+fc3.weight
+Parameter containing:
+tensor([[ 0.5998,  0.4671, -0.1469]], requires_grad=True)
+fc3.bias
+Parameter containing:
+tensor([0.3321], requires_grad=True)
